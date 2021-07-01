@@ -30,14 +30,23 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="action_open"/>
+    <widget class="QMenu" name="menuOpen">
+     <property name="title">
+      <string>Open</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="action_openFile_2"/>
+     <addaction name="action_openFiles"/>
+     <addaction name="action_openFolder"/>
+    </widget>
+    <addaction name="menuOpen"/>
     <addaction name="separator"/>
     <addaction name="action_exit"/>
    </widget>
@@ -73,11 +82,6 @@
    <addaction name="action_zoomToActualSize"/>
    <addaction name="action_zoomToExtents"/>
   </widget>
-  <action name="action_open">
-   <property name="text">
-    <string>Open</string>
-   </property>
-  </action>
   <action name="action_exit">
    <property name="text">
     <string>Exit</string>
@@ -141,6 +145,36 @@
    </property>
    <property name="toolTip">
     <string>Open image file</string>
+   </property>
+  </action>
+  <action name="actionFolder">
+   <property name="text">
+    <string>File</string>
+   </property>
+  </action>
+  <action name="actionFile">
+   <property name="text">
+    <string>Files</string>
+   </property>
+  </action>
+  <action name="actionFolder_2">
+   <property name="text">
+    <string>Folder</string>
+   </property>
+  </action>
+  <action name="action_openFile_2">
+   <property name="text">
+    <string>File</string>
+   </property>
+  </action>
+  <action name="action_openFiles">
+   <property name="text">
+    <string>Files</string>
+   </property>
+  </action>
+  <action name="action_openFolder">
+   <property name="text">
+    <string>Folder</string>
    </property>
   </action>
  </widget>

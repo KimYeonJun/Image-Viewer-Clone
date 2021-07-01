@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="zoom">
+    <file>icon/rotate.png</file>
     <file>icon/zoom_in.png</file>
     <file>icon/zoom_out.png</file>
     <file>icon/zoom_to_actual_size.png</file>
